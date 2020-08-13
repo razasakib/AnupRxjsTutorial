@@ -3,16 +3,26 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { HeaderComponent } from './includes/header/header.component';
+import { PromiseComponent } from './includes/promise/promise.component';
+import { ObservableComponent } from './includes/observable/observable.component';
+import { ListComponent } from './includes/observable/list/list.component';
+import { FromEventComponent } from './includes/observable/from-event/from-event.component';
+import { DesignUtilityService } from './appServices/design-utility.service';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    PromiseComponent,
+    ObservableComponent,
+    ListComponent,
+    FromEventComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [DesignUtilityService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
