@@ -9,6 +9,7 @@ import { ObservableComponent } from './includes/observable/observable.component'
 import { ListComponent } from './includes/observable/list/list.component';
 import { FromEventComponent } from './includes/observable/from-event/from-event.component';
 import { DesignUtilityService } from './appServices/design-utility.service';
+import { IntervalComponent } from './includes/interval/interval.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +17,8 @@ import { DesignUtilityService } from './appServices/design-utility.service';
     PromiseComponent,
     ObservableComponent,
     ListComponent,
-    FromEventComponent
+    FromEventComponent,
+    IntervalComponent
   ],
   imports: [
     BrowserModule,
