@@ -11,6 +11,11 @@ import { FromEventComponent } from './includes/observable/from-event/from-event.
 import { DesignUtilityService } from './appServices/design-utility.service';
 import { IntervalComponent } from './includes/interval/interval.component';
 import { OfFromComponent } from './includes/of-from/of-from.component';
+import { CustomComponent } from './includes/custom/custom.component';
+import { MapComponent } from './includes/map/map.component';
+import { PluckComponent } from './includes/pluck/pluck.component';
+import { FilterComponent } from './includes/filter/filter.component';
+import { TabComponent } from './includes/tab/tab.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +25,12 @@ import { OfFromComponent } from './includes/of-from/of-from.component';
     ListComponent,
     FromEventComponent,
     IntervalComponent,
-    OfFromComponent
+    OfFromComponent,
+    CustomComponent,
+    MapComponent,
+    PluckComponent,
+    FilterComponent,
+    TabComponent
   ],
   imports: [
     BrowserModule,

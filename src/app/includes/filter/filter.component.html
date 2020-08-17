@@ -1,0 +1,71 @@
+
+<div class="my-3">
+    <h2>Filter Operator</h2>
+  
+    <div class="row">
+        <div class="col-md-4">
+          <strong>Ex-01</strong>
+            <p class="bg-light py-3 px-2 border rounded">
+                <strong>Filter:</strong>by Name
+            </p>
+            <hr>
+            <table class="table">
+              <tr>
+                <th>Id</th>
+                <th>Name</th>
+
+              </tr>
+              <tr *ngFor='let memberData of data1'>
+                <td>{{memberData.id}}</td>
+                <td>{{memberData.name}}</td>
+            </tr>
+            </table>
+        </div>
+  <!--2-->
+        <div class="col-md-4">
+             <strong>Ex-02</strong>
+            <p class="bg-light py-3 px-2 border rounded">
+                <strong>Filter:</strong>By Gender
+            </p>
+              <hr>
+              <table class="table">
+                <tr>
+                 <th>Id</th>
+                 <th>Name</th>
+                 <th>Gender</th>
+                </tr>
+                <tr *ngFor='let memberData2 of data2'>
+                    <td>{{memberData2.id}}</td>
+                    <td>{{memberData2.name}}</td>
+                    <td>{{memberData2.gender}}</td>
+                </tr>
+              </table>
+        </div>
+  
+      
+        <!--3-->
+        <div class="col-md-4">
+            <strong>Ex-02</strong>
+           <p class="bg-light py-3 px-2 border rounded">
+               <strong>Filter:</strong>By nth 
+           </p>
+             <hr>
+             <table class="table">
+               <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Gender</th>
+               </tr>
+               <tr *ngFor='let memberData3 of data3'>
+                   <td>{{memberData3.id}}</td>
+                   <td>{{memberData3.name}}</td>
+                   <td>{{memberData3.gender}}</td>
+               </tr>
+             </table>
+       </div>
+ 
+
+    </div>
+  
+  </div>
+  

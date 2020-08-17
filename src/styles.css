@@ -1,2 +1,31 @@
+
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css"
+@import "~bootstrap/dist/css/bootstrap.css";
+
+/*View Encapsulation Problem*/
+ul.techList{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul.techList li {
+background: #f8f8f8;
+border: 1px solid #ddd;
+border-radius: 5px;
+padding: 7px;
+margin-bottom: 12px;
+}
+ul.techList.error li {
+color: red;
+background: rgba(255, 0, 0, 0.08);
+border: red;
+}
+
+ul.techList.completed li {
+color: green;
+background: #369e5014;
+border: green;
+}
+
+
+

@@ -1,0 +1,40 @@
+<div class="my-3">
+  <h2>Pluck Operator</h2>
+
+  <div class="row">
+      <div class="col-md-6">
+        <strong>Ex-01</strong>
+          <p class="bg-light py-3 px-2 border rounded">
+              <strong>Pluck:</strong>by Property
+          </p>
+          <hr>
+          <table class="table">
+            <tr>
+              <th>Name</th>
+            </tr>
+            <tr *ngFor="let userdata of data">
+              <th>{{userdata}}</th>
+            </tr>
+          </table>
+      </div>
+<!--2-->
+      <div class="col-md-6">
+           <strong>Ex-02</strong>
+          <p class="bg-light py-3 px-2 border rounded">
+              <strong>Pluck:</strong>By Neasted Property
+          </p>
+            <hr>
+            <table class="table">
+              <tr>
+                <th>Job Title</th>
+              </tr>
+              <tr *ngFor="let userdata of data">
+                <th>{{userdata}}</th>
+              </tr>
+            </table>
+      </div>
+
+    
+  </div>
+
+</div>
